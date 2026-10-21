@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TCMForge（方证）· 测试网页版</title>
+<title>TCMForge（方证）· 测试网页版 · AI-Ready v0.8</title>
 <style>
   :root{
     --cell-red:#d9261c; --cell-dark:#1a1a2e; --ink:#222; --muted:#6b7280;
@@ -35,6 +35,7 @@
   .pill{display:inline-block;padding:2px 9px;border-radius:12px;font-size:11px}
   .pill.bio{background:#dcfce7;color:var(--green)} .pill.cell{background:#dbeafe;color:#1d4ed8}
   .pill.animal{background:#fef3c7;color:var(--amber)} .pill.pred{background:#f3e8ff;color:#7e22ce}
+  .pill.pass{background:#dcfce7;color:var(--green)} .pill.partial{background:#fef3c7;color:var(--amber)} .pill.fail{background:#fee2e2;color:#b91c1c}
   .ev{display:inline-block;min-width:44px;height:8px;background:#eee;border-radius:5px;position:relative;vertical-align:middle}
   .ev i{position:absolute;left:0;top:0;bottom:0;background:var(--green);border-radius:5px}
   .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
@@ -48,8 +49,8 @@
 <body>
 <header>
   <h1>TCMForge <span style="font-weight:400;font-size:14px">中药复方证据链智能数据基座 · 测试网页版</span></h1>
-  <p>复方为中心 · 证据可溯 · 纯前端离线演示（数据快照内置，无后端）</p>
-  <div class="badges"><span class="badge">v0.6-demo</span><span class="badge" id="b-stats">加载中…</span><span class="badge">决策层 rule（离线）</span></div>
+  <p>复方为中心 · 证据可溯 · AI-Ready 主动治理 · 纯前端离线演示（数据快照内置，无后端）</p>
+  <div class="badges"><span class="badge">v0.8-demo</span><span class="badge" id="b-stats">加载中…</span><span class="badge">决策层 rule（离线）</span></div>
 </header>
 <nav>
   <a data-s="s0" href="#s0">复方检索</a>
@@ -61,6 +62,7 @@
   <a data-s="s6" href="#s6">数字孪生★</a>
   <a data-s="s7" href="#s7">图谱/导出</a>
   <a data-s="s8" href="#s8">数据来源</a>
+  <a data-s="s9" href="#s9">AI-Ready治理★</a>
 </nav>
 <div class="wrap">
   <div id="stats"></div>
@@ -148,10 +150,17 @@
       <tr><td>疗效证据链数据集</td><td>经方条文 · 证候 · 疾病 · 药效贯通</td><td>自有·efficacy-v1</td></tr>
       <tr><td>宋本《伤寒论》等古籍</td><td>配伍与剂量（公有领域古籍文本）</td><td>公有领域</td></tr>
     </table>
-    <p class="note">本页为纯前端测试版：数据快照内置（约0.75MB），全部逻辑在本机浏览器运行；完整平台（FastAPI 后端、汇交审编、分级共享、AI 决策层）详见开源工程。</p>
+    <p class="note">本页为纯前端测试版：数据快照内置，全部逻辑在本机浏览器运行；完整平台（FastAPI 后端、汇交审编、分级共享、AI-Ready 治理层）详见开源工程。</p>
+  </div></section>
+
+  <section id="s9"><div class="card">
+    <h2>AI-Ready 主动治理 ★</h2>
+    <div class="sub">19 项考核指标 · 7 模态 / 25 格式 · 14 工具 · 6 类智能体 · 可信合规</div>
+    <button class="go" data-act="aiready">刷新指标</button>
+    <div id="rAR"></div>
   </div></section>
 </div>
-<footer>本测试页为 TCMForge（方证）演示用途 · 数据为公开库与公有领域古籍子集 · 不公开平台源码</footer>
+<footer>TCMForge（方证）v0.8 演示 · 数据为公开库与公有领域古籍子集 · 不公开平台源码</footer>
 <script src="bundle.js"></script>
 </body>
 </html>
