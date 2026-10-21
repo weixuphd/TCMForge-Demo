@@ -134,14 +134,32 @@
   </div></section>
 
   <section id="s7"><div class="card">
-    <h2>AI-Ready导出</h2><div class="sub">图谱、特征矩阵与多格式数据导出（JSON / JSONL / CSV）</div>
+    <h2>AI-Ready导出</h2><div class="sub">特征矩阵、图谱、复方与临床数据多格式导出（13 个下载项）；25 种输入格式见下方矩阵</div>
+    <div class="sub" style="margin-top:8px">特征矩阵</div>
+    <div class="searchrow">
+      <button class="go" data-act="features">预览</button>
+      <button class="go green" data-act="expcsv">CSV</button>
+      <button class="go green" data-act="exptsv">TSV</button>
+      <button class="go dark" data-act="expjsonl">JSONL</button>
+      <button class="go dark" data-act="expjson">JSON</button>
+      <button class="go" style="background:#334155" data-act="expxml">XML</button>
+    </div>
+    <div class="sub" style="margin-top:10px">知识图谱</div>
     <div class="searchrow">
       <button class="go" data-act="graph">加载图谱</button>
-      <button class="go" data-act="features">预览特征矩阵</button>
-      <button class="go green" data-act="expcsv">导出特征矩阵 CSV</button>
-      <button class="go dark" data-act="expjsonl">导出特征矩阵 JSONL</button>
-      <button class="go" data-act="expgraph">导出图谱 JSON</button>
+      <button class="go dark" data-act="expgraphjson">JSON</button>
+      <button class="go" style="background:#334155" data-act="expgraphcsv">CSV</button>
+      <button class="go" style="background:#6d28d9" data-act="expgraphml">GraphML</button>
     </div>
+    <div class="sub" style="margin-top:10px">复方与临床</div>
+    <div class="searchrow">
+      <button class="go green" data-act="expformulascsv">复方 CSV</button>
+      <button class="go dark" data-act="expformulasjsonl">复方 JSONL</button>
+      <button class="go" style="background:#334155" data-act="expclinicalcsv">临床 CSV</button>
+      <button class="go dark" data-act="expclinicaljson">临床 JSON</button>
+      <button class="go" style="background:#6d28d9" data-act="expclinicalfhir">临床 FHIR</button>
+    </div>
+    <div id="fmtMatrix"></div>
     <div id="r7a"></div>
     <div id="r7b"></div>
   </div></section>
