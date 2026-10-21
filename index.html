@@ -60,9 +60,9 @@
   <a data-s="s4" href="#s4">每日追踪★</a>
   <a data-s="s5" href="#s5">AI实验室★</a>
   <a data-s="s6" href="#s6">数字孪生★</a>
-  <a data-s="s7" href="#s7">图谱/导出</a>
+  <a data-s="s7" href="#s7">AI-Ready导出</a>
   <a data-s="s8" href="#s8">数据来源</a>
-  <a data-s="s9" href="#s9">AI-Ready治理★</a>
+  <a data-s="s9" href="#s9">AI-Ready能力★</a>
 </nav>
 <div class="wrap">
   <div id="stats"></div>
@@ -134,10 +134,15 @@
   </div></section>
 
   <section id="s7"><div class="card">
-    <h2>知识图谱 / AI-Ready 导出</h2><div class="sub">方-药-成分-靶点 图谱与带证据权重的特征矩阵</div>
-    <button class="go" data-act="graph">加载图谱</button>
+    <h2>AI-Ready导出</h2><div class="sub">图谱、特征矩阵与多格式数据导出（JSON / JSONL / CSV）</div>
+    <div class="searchrow">
+      <button class="go" data-act="graph">加载图谱</button>
+      <button class="go" data-act="features">预览特征矩阵</button>
+      <button class="go green" data-act="expcsv">导出特征矩阵 CSV</button>
+      <button class="go dark" data-act="expjsonl">导出特征矩阵 JSONL</button>
+      <button class="go" data-act="expgraph">导出图谱 JSON</button>
+    </div>
     <div id="r7a"></div>
-    <button class="go green" style="margin-top:10px" data-act="features">预览特征矩阵</button>
     <div id="r7b"></div>
   </div></section>
 
@@ -154,9 +159,9 @@
   </div></section>
 
   <section id="s9"><div class="card">
-    <h2>AI-Ready 主动治理 ★</h2>
-    <div class="sub">19 项考核指标 · 7 模态 / 25 格式 · 14 工具 · 6 类智能体 · 可信合规</div>
-    <button class="go" data-act="aiready">刷新指标</button>
+    <h2>AI-Ready 能力</h2>
+    <div class="sub">数据治理与模型就绪能力清单（软件当前能力）</div>
+    <button class="go" data-act="aiready">刷新能力</button>
     <div id="rAR"></div>
   </div></section>
 </div>
